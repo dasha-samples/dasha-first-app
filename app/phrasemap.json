@@ -1,0 +1,93 @@
+{
+  "default": {
+    "voiceInfo": {
+      "lang": "en-US",
+      "speaker": "default",
+      "speed": 1.3,
+      "variation": 40
+    },
+    "phrases": {
+      "greeting": [{ "text": "Welcome to United Postal Service! How can I help you?"}],
+      "track_parcel": [{ "text": "Sorry, tracking function is not implemented yet."}],
+      "missed_delivery": [{ "text": "Sorry, rescheduling function is not implemented yet."}],
+      "where_is_point": [{ "text": "Sorry, closest location function is not implemented yet."}],
+      "return_shipment": [{ "text": "Sorry, shipment return function is not implemented yet."}],
+
+
+      "i_will_call_back": [{ "text": "Okay, I'll call you later. Bye!", "voiceInfo": { "speed": 1.2, "variation": 5 } }],
+      "hello": {
+        "random": [
+          [{ "text": "Hello" }],
+          [{ "text": "Umm, hello?" }],
+          [{ "text": "Are you there?" }]
+        ]
+      },
+      "when_callback": [{ "text": "When can I call you back?" }],
+      "i_said": [{ "text": "I was saying" }],
+      "sorry_wont_call": [
+        { "text": "Sorry if I bothered you, have a nice day! Bye!" }
+      ],
+      "i_will_wait": {
+        "random": [
+          [{ "text": "Okay, I'll wait" }],
+          [{ "text": "Sure, I'll wait" }],
+          [{ "text": "Okay, no problem!" }]
+        ]
+      },
+      "i_can_hear_you": [{ "text": "Yes, I hear you" }],
+      "dont_understand": {
+        "random": [
+          [{ "text": "Sorry, could you say it again?" }],
+          [
+            {
+              "text": "Sorry, the connection dropped for a second. Could you say that again?"
+            }
+          ],
+          [{ "text": "Sorry, I didn't quite catch that." }],
+          [{ "text": "Could you say it one more time?" }]
+        ]
+      },
+      "dont_understand_hangup": [
+        {
+          "text": "I'm sorry I can barely hear you. I'll try to call you later! Bye!"
+        }
+      ],
+      "dont_understand_forward": [
+        {
+          "text": "I'm sorry, let me transfer you to another agent. Please stand by!",
+          "voiceInfo": { "speed": 1.3, "variation": 40 }
+        }
+      ],
+      "mhm": [{ "text": "Mgm..." }],
+      "yes_i_am_a_robot": [
+        {
+          "text": "Yes, I am a robot! Please do not tell anybody about this or I get fired"
+        }
+      ],
+      "is_that_all": [{ "text": "Is that all?" }]
+    },
+    "types": {},
+    "macros": {
+      "track_parcel": {},
+      "missed_delivery": {},
+      "where_is_point": {},
+      "return_shipment": {},
+      "i_will_call_back": {},
+      "hello": {},
+      "when_callback": {},
+      "i_said": {},
+      "sorry_wont_call": {},
+      "i_will_wait": {},
+      "i_can_hear_you": {},
+      "dont_understand": {},
+      "dont_understand_hangup": {},
+      "dont_understand_forward": {},
+      "mhm": {},
+      "yes_i_am_a_robot": {},
+      "is_that_all": {},
+      "greeting": {},
+      "will_help": {},
+      "how_much": {}
+    }
+  }
+}

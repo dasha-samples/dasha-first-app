@@ -1,0 +1,31 @@
+{
+  "includes": {
+    "track_parcel": [
+      "track parcel",
+      "track package",
+      "where is my package",
+      "where is my parcel",
+      "you know I'd like to track my package please"
+    ],
+    "missed_delivery": [
+      "i missed the delivery",
+      "missed my delivery",
+      "how can I reschedule delivery",
+      "is there a way to schedule delivery again"
+    ],
+    "where_is_point": [
+      "where is my point",
+      "where is the closest point",
+      "how to find a point"
+    ],
+    "return_shipment": [
+      "how do I return my shipment",
+      "i want to return a parcel",
+      "how to return parcel",
+      "how to return shipment",
+      "how to return my shipment"
+    ]
+  },
+  "excludes": {
+  }
+}
