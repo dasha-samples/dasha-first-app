@@ -1,4 +1,4 @@
-export function createJob(phone?: string) {
+export function createJob(phone: string) {
   return {
     data: {
       phone
