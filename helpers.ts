@@ -11,7 +11,7 @@ export function createLogger(options?: {
       await fs.promises.appendFile(options.logFile, str);
     }
   }
-
+  appendLog(`${"#".repeat(100)}\n`);
   return {
     log: async (msg: string) => {
       options?.log?.({ Log: msg });

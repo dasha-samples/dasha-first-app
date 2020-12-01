@@ -15,5 +15,5 @@ npm i
      (phone number in international format without `+`, for instance `12223334455`).
     * To start text chat run
     ```sh
-    npm start
+    npm start chat
     ```

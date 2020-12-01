@@ -35,14 +35,36 @@ async function main() {
         }
       }
     });
+    await app.addSessionConfig({
+      name: "inbound",
+      config: {
+        type: "audio",
+        channel: {
+          type: "sip",
+          inbound: {
+            account: "external",
+            password: "",
+            ipAcl: [],
+            priority: 7
+          }
+        },
+        stt: {
+          configName: "Default-en",
+        },
+        tts: {
+          type: "synthesized",
+          configName: "Dasha"
+        }
+      }
+    });
 
     const phone = process.argv[2];
     app.onJob({
-      startingJob: async (serverId, id) => {
-        console.log(`Staring job ${id}`, { serverId });
-        const job = createJob(id === "testJob" ? (phone ?? "") : "");
-
-        if (id === "testJob" && !phone) {
+      startingJob: async (serverId, id, incomingData) => {
+        console.log(`Staring job ${id}`, { serverId, ...incomingData });
+        const job = createJob(id === "testJob" && phone !== "chat" ? phone : "");
+        
+        if (id === "testJob" && phone === "chat") {
           const debugEvents = createLogger({ logFile: "log.txt" });
           runConsoleChat(await sdk.connectChat(serverId)).catch(console.error);
           return { accept: true, ...job, debugEvents, sessionConfigName: "text" };
@@ -64,10 +86,12 @@ async function main() {
       }
     });
 
-    await app.enqueueJobs([
-      { id: "testJob", notAfter: new Date(Date.now() + 3600 * 1000) }
-    ]);
-    console.log(`Enqueued job: connect to ${phone ?? "chat"}`);
+    if (phone) {
+      await app.enqueueJobs([
+        { id: "testJob", notAfter: new Date(Date.now() + 3600 * 1000) }
+      ]);
+      console.log(`Enqueued job: connect to ${phone}`);
+    }
 
   } catch (e) {
     console.error(e);
