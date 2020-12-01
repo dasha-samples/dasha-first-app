@@ -17,8 +17,3 @@ npm i
     ```sh
     npm start chat
     ```
-    * To start accepting inbound calls run
-    ```sh
-    npm start
-    ```
-     (but other starting options accept incoming calls as well). Then use this test inbound phone number to call `+358753267899` (for test purposes only! could be changed anytime).
