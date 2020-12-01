@@ -10,7 +10,7 @@ start node root
     {
         #connectSafe($phone);
         #waitForSpeech(1000);
-        #say("greeting");
+        #sayText("Welcome to United Postal Service! How can I help you?");
         wait *;
     }
     transitions
@@ -25,7 +25,7 @@ node track_parcel
 {
     do
     {
-        #say("track_parcel");
+        #sayText("Sorry, tracking function is not implemented yet.");
         #disconnect();
         exit;
     }
@@ -37,7 +37,7 @@ node missed_delivery
 {
     do
     {
-        #say("missed_delivery");
+        #sayText("Sorry, rescheduling function is not implemented yet.");
         #disconnect();
         exit;
     }
@@ -49,7 +49,7 @@ node where_is_point
 {
     do
     {
-        #say("where_is_point");
+        #sayText("Sorry, closest location function is not implemented yet.");
         #disconnect();
         exit;
     }
@@ -61,7 +61,7 @@ node return_shipment
 {
     do
     {
-        #say("return_shipment");
+        #sayText("Sorry, shipment return function is not implemented yet.");
         #disconnect();
         exit;
     }
