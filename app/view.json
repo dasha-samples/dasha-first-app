@@ -1,40 +1,4 @@
 {
-  "node::new_node0": {
-    "common.position": {
-      "x": 0,
-      "y": 5.668615984405456
-    }
-  },
-  "node::new_node1": {
-    "common.position": {
-      "x": 600,
-      "y": -103.45769982936949
-    }
-  },
-  "node::new_node2": {
-    "common.position": {
-      "x": 600,
-      "y": -8.644834332293454
-    }
-  },
-  "node::new_node3": {
-    "common.position": {
-      "x": 600,
-      "y": 108.5968810673167
-    }
-  },
-  "node::new_node4": {
-    "common.position": {
-      "x": 600,
-      "y": 218.70214422521147
-    }
-  },
-  "node::track_p": {
-    "common.position": {
-      "x": 0,
-      "y": 23
-    }
-  },
   "node::track_parcel": {
     "common.position": {
       "x": 600,
@@ -64,14 +28,5 @@
       "x": 0,
       "y": 242
     }
-  },
-  "node::greeting": {
-    "common.position": {
-      "x": 600,
-      "y": 242
-    }
-  },
-  "transition::new_node0:transition0": {
-    "common.controlPoints": []
   }
 }
