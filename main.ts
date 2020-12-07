@@ -24,7 +24,7 @@ async function main() {
         type: "audio",
         channel: {
           type: "sip",
-          configName: "dev-local"
+          configName: "default"
         },
         stt: {
           configName: "Default-en"
