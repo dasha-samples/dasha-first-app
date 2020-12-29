@@ -1,5 +1,6 @@
 {
     "dashastudio.profiler.endpoint": "https://profiler.us.dasha.ai",
     "dashastudio.api.endpoint": "app.us.dasha.ai",
+    "dashastudio.api.server": "app.us.dasha.ai",
     "dashastudio.api.secure": true
 }
