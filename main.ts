@@ -1,4 +1,4 @@
-import DashaSdk, { IApplication } from "@dasha.ai/platform-sdk";
+import DashaSdk, * as dasha from "@dasha.ai/platform-sdk";
 
 import { createJob } from "./createJob";
 import { createLogger, recordToUrl, runConsoleChat } from "./helpers";
@@ -8,11 +8,12 @@ async function main() {
     url: "app.us.dasha.ai",
     apiKey: process.env.DASHA_APIKEY!
   });
-  let app: IApplication;
+  let app: dasha.IApplication;
   try {
     app = await sdk.registerApp({
       appPackagePath: "./app",
       concurrency: 1,
+      progressReporter: dasha.progress.consoleReporter,
     });
     app.setLogger(console);
     console.log(`App ${app.applicationId}, instance ${app.instanceId}`);
