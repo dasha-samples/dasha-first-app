@@ -2,9 +2,9 @@
   "default": {
     "voiceInfo": {
       "lang": "en-US",
-      "speaker": "default",
-      "speed": 1.3,
-      "variation": 40
+      "speaker": "V2",
+      "speed": 0.3,
+      "variation": 4
     },
     "phrases": {
       "greeting": [{ "text": "Welcome to United Postal Service! How can I help you?"}],
@@ -14,7 +14,7 @@
       "return_shipment": [{ "text": "Sorry, shipment return function is not implemented yet."}],
 
 
-      "i_will_call_back": [{ "text": "Okay, I'll call you later. Bye!", "voiceInfo": { "speed": 1.2, "variation": 5 } }],
+      "i_will_call_back": [{ "text": "Okay, I'll call you later. Bye!" }],
       "hello": {
         "random": [
           [{ "text": "Hello" }],
@@ -54,8 +54,7 @@
       ],
       "dont_understand_forward": [
         {
-          "text": "I'm sorry, let me transfer you to another agent. Please stand by!",
-          "voiceInfo": { "speed": 1.3, "variation": 40 }
+          "text": "I'm sorry, let me transfer you to another agent. Please stand by!"
         }
       ],
       "mhm": [{ "text": "Mgm..." }],
