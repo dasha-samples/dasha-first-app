@@ -10,7 +10,7 @@ start node root
     {
         #connectSafe($phone);
         #waitForSpeech(1000);
-        #sayText("Welcome to United Postal Service! How can I help you?");
+        #sayText("Welcome to Acme Postal Service. How can I help you?");
         wait *;
     }
     transitions

@@ -14,7 +14,7 @@ digression hangup
     do
     {
         set $serviceStatus = digression.hangup.serviceStatus;
-        #disconnect();
+        //#disconnect();
         exit;
     }
     transitions
