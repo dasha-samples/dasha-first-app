@@ -1,19 +1,31 @@
 # How to start the demo app
 
-This example shows how to build conversational IVR on top of Dasha. If you need any help, join us in our [Developer Community](https://discord.gg/R8mDP2JGmv).
+This example shows how to build conversational IVR on top of Dasha. If you need any help, join us in our [Developer Community](https://community.dasha.ai).
 
-1. Set environment variable `DASHA_APIKEY` (or create a file `.env` that contains `DASHA_APIKEY=<your_apikey>`). To receive your Dasha API key, enroll into our beta program here https://dasha.ai/en-us/developers.
-2. Run `npm i`.
+1. Clone the repo and install the dependencies:
+
 ```sh
-npm i
+git clone https://github.com/dasha-samples/dasha-first-app
+cd dasha-first-app
+npm install
 ```
-3. Run one of the following:
-    * To start outbound call run
-    ```sh
-    npm start <phone_number>
-    ```
-     (phone number in international format without `+`, for instance `12223334455`).
-    * To start text chat run
-    ```sh
-    npm start chat
-    ```
+
+2. Create or log into your account using the Dasha CLI tool:
+
+```sh
+npx dasha account login
+```
+
+3. To start a text chat, run:
+
+```sh
+npm start chat
+```
+
+4. To receive a phone call from Dasha, run:
+
+```sh
+npm start <your phone number>
+```
+
+The phone number should be in the international format without the `+` (e.g. `12223334455`)

@@ -1,6 +1,7 @@
 import "commonReactions/all.dsl";
 
-context {
+context
+{
     input phone: string;
 }
 
@@ -13,6 +14,7 @@ start node root
         #sayText("Welcome to Acme Postal Service. How can I help you?");
         wait *;
     }
+
     transitions
     {
         track_parcel: goto track_parcel on #messageHasIntent("track_parcel");
@@ -21,6 +23,7 @@ start node root
         return_shipment: goto return_shipment on #messageHasIntent("return_shipment");
     }
 }
+
 node track_parcel
 {
     do
@@ -29,10 +32,12 @@ node track_parcel
         #disconnect();
         exit;
     }
+
     transitions
     {
     }
 }
+
 node missed_delivery
 {
     do
@@ -41,10 +46,12 @@ node missed_delivery
         #disconnect();
         exit;
     }
+
     transitions
     {
     }
 }
+
 node where_is_point
 {
     do
@@ -53,10 +60,12 @@ node where_is_point
         #disconnect();
         exit;
     }
+
     transitions
     {
     }
 }
+
 node return_shipment
 {
     do
@@ -65,6 +74,7 @@ node return_shipment
         #disconnect();
         exit;
     }
+
     transitions
     {
     }
