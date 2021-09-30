@@ -23,7 +23,6 @@ digression swear_words
         set $serviceStatus=digression.swear_words.serviceStatus;
         set $callBackDetails = #message.originalText;
 
-        #disconnect();
         exit;
     }
 

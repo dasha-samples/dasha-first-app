@@ -23,7 +23,6 @@ digression sorry_wont_call
         set $serviceStatus=digression.sorry_wont_call.serviceStatus;
         set $callBackDetails = #message.originalText;
 
-        #disconnect();
         exit;
     }
 
