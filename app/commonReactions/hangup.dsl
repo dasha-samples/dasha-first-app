@@ -9,7 +9,7 @@ digression hangup
 {
     conditions
     {
-        on true tags: onclosed;
+        on true priority 50000 tags: onclosed;
     }
 
     var serviceStatus = "UserHangup";
@@ -18,9 +18,5 @@ digression hangup
     {
         set $serviceStatus = digression.hangup.serviceStatus;
         exit;
-    }
-
-    transitions
-    {
     }
 }
