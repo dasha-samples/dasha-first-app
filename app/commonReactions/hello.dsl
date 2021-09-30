@@ -62,7 +62,6 @@ node hello_hangup
         set $status="EmptyCall";
         set $serviceStatus="Done";
 
-        #disconnect();
         exit;
     }
 

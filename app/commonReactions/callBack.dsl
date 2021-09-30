@@ -30,7 +30,6 @@ digression i_will_call_back
         set $status=digression.i_will_call_back.status;
         set $callBackDetails = #message.originalText;
 
-        #disconnect();
         exit;
     }
 

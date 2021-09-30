@@ -98,7 +98,6 @@ node dont_understand_hangup
         set $status=digression.dont_understand_hangup_params.status;
         set $serviceStatus=digression.dont_understand_hangup_params.serviceStatus;
 
-        #disconnect();
         exit;
     }
 
